@@ -1,0 +1,339 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.4"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Шифр Гронсфельда: Файл main.cpp</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Шифр Гронсфельда<span id="projectnumber">&#160;1.0</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.9.4 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search",'Поиск','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Поиск');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('main_8cpp.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#func-members">Функции</a>  </div>
+  <div class="headertitle"><div class="title">Файл main.cpp</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>Главный файл программы для шифра Гронсфельда  
+<a href="#details">Подробнее...</a></p>
+<div class="textblock"><code>#include &quot;<a class="el" href="modAlphaCipher_8h_source.html">modAlphaCipher.h</a>&quot;</code><br />
+<code>#include &lt;iostream&gt;</code><br />
+<code>#include &lt;locale&gt;</code><br />
+<code>#include &lt;codecvt&gt;</code><br />
+<code>#include &lt;algorithm&gt;</code><br />
+</div><div class="textblock"><div class="dynheader">
+Граф включаемых заголовочных файлов для main.cpp:</div>
+<div class="dyncontent">
+<div class="center"><img src="main_8cpp__incl.png" border="0" usemap="#amain_8cpp" alt=""/></div>
+<map name="amain_8cpp" id="amain_8cpp">
+<area shape="rect" title="Главный файл программы для шифра Гронсфельда" alt="" coords="413,5,495,32"/>
+<area shape="rect" href="modAlphaCipher_8h.html" title="Заголовочный файл для класса шифрования методом Гронсфельда" alt="" coords="225,80,366,107"/>
+<area shape="rect" title=" " alt="" coords="361,155,422,181"/>
+<area shape="rect" title=" " alt="" coords="447,155,520,181"/>
+<area shape="rect" title=" " alt="" coords="491,80,571,107"/>
+<area shape="rect" title=" " alt="" coords="595,80,681,107"/>
+<area shape="rect" title=" " alt="" coords="203,155,254,181"/>
+<area shape="rect" title=" " alt="" coords="278,155,337,181"/>
+<area shape="rect" title=" " alt="" coords="5,155,68,181"/>
+<area shape="rect" title=" " alt="" coords="92,155,179,181"/>
+</map>
+</div>
+</div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+Функции</h2></td></tr>
+<tr class="memitem:af8df558d408a7b2ff2c71daa7bc72e9c"><td class="memItemLeft" align="right" valign="top">wstring&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8cpp.html#af8df558d408a7b2ff2c71daa7bc72e9c">remove_spaces</a> (const wstring &amp;s)</td></tr>
+<tr class="memdesc:af8df558d408a7b2ff2c71daa7bc72e9c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Удаление пробелов из строки  <a href="main_8cpp.html#af8df558d408a7b2ff2c71daa7bc72e9c">Подробнее...</a><br /></td></tr>
+<tr class="separator:af8df558d408a7b2ff2c71daa7bc72e9c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a11f1f712642ffaecb0260116ec5d7cc4"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8cpp.html#a11f1f712642ffaecb0260116ec5d7cc4">is_valid_russian_text</a> (const wstring &amp;s)</td></tr>
+<tr class="memdesc:a11f1f712642ffaecb0260116ec5d7cc4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Проверка валидности русского текста  <a href="main_8cpp.html#a11f1f712642ffaecb0260116ec5d7cc4">Подробнее...</a><br /></td></tr>
+<tr class="separator:a11f1f712642ffaecb0260116ec5d7cc4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6db636834487d2ca9964761da2483dbc"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8cpp.html#a6db636834487d2ca9964761da2483dbc">is_valid_key</a> (const wstring &amp;s)</td></tr>
+<tr class="memdesc:a6db636834487d2ca9964761da2483dbc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Проверка валидности ключа  <a href="main_8cpp.html#a6db636834487d2ca9964761da2483dbc">Подробнее...</a><br /></td></tr>
+<tr class="separator:a6db636834487d2ca9964761da2483dbc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2040e8b4fbb96eb69999dc22e4593912"><td class="memItemLeft" align="right" valign="top">wstring&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8cpp.html#a2040e8b4fbb96eb69999dc22e4593912">to_upper_rus</a> (const wstring &amp;s)</td></tr>
+<tr class="memdesc:a2040e8b4fbb96eb69999dc22e4593912"><td class="mdescLeft">&#160;</td><td class="mdescRight">Преобразование строки к верхнему регистру (русский)  <a href="main_8cpp.html#a2040e8b4fbb96eb69999dc22e4593912">Подробнее...</a><br /></td></tr>
+<tr class="separator:a2040e8b4fbb96eb69999dc22e4593912"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a97f14ab5240e2645455893ffd8b4f9f0"><td class="memItemLeft" align="right" valign="top">wstring&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8cpp.html#a97f14ab5240e2645455893ffd8b4f9f0">to_wide</a> (const string &amp;narrow_str)</td></tr>
+<tr class="memdesc:a97f14ab5240e2645455893ffd8b4f9f0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Преобразование narrow string в wide string.  <a href="main_8cpp.html#a97f14ab5240e2645455893ffd8b4f9f0">Подробнее...</a><br /></td></tr>
+<tr class="separator:a97f14ab5240e2645455893ffd8b4f9f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a60cd55d08e129eaacf9d8194b6633477"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8cpp.html#a60cd55d08e129eaacf9d8194b6633477">to_narrow</a> (const wstring &amp;wide_str)</td></tr>
+<tr class="memdesc:a60cd55d08e129eaacf9d8194b6633477"><td class="mdescLeft">&#160;</td><td class="mdescRight">Преобразование wide string в narrow string.  <a href="main_8cpp.html#a60cd55d08e129eaacf9d8194b6633477">Подробнее...</a><br /></td></tr>
+<tr class="separator:a60cd55d08e129eaacf9d8194b6633477"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae66f6b31b5ad750f1fe042a706a4e3d4"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4">main</a> ()</td></tr>
+<tr class="memdesc:ae66f6b31b5ad750f1fe042a706a4e3d4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Главная функция программы  <a href="main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4">Подробнее...</a><br /></td></tr>
+<tr class="separator:ae66f6b31b5ad750f1fe042a706a4e3d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
+<div class="textblock"><p >Главный файл программы для шифра Гронсфельда </p>
+<dl class="section author"><dt>Автор</dt><dd>Ваше Имя </dd></dl>
+<dl class="section version"><dt>Версия</dt><dd>1.0 </dd></dl>
+<dl class="section date"><dt>Дата</dt><dd>04.12.2026</dd></dl>
+<p>Программа предоставляет интерфейс для шифрования и расшифрования текста методом Гронсфельда на русском языке. </p>
+</div><h2 class="groupheader">Функции</h2>
+<a id="a6db636834487d2ca9964761da2483dbc" name="a6db636834487d2ca9964761da2483dbc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6db636834487d2ca9964761da2483dbc">&#9670;&nbsp;</a></span>is_valid_key()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool is_valid_key </td>
+          <td>(</td>
+          <td class="paramtype">const wstring &amp;&#160;</td>
+          <td class="paramname"><em>s</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Проверка валидности ключа </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">s</td><td>Ключ для проверки </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>true если ключ содержит только русские буквы </dd></dl>
+
+</div>
+</div>
+<a id="a11f1f712642ffaecb0260116ec5d7cc4" name="a11f1f712642ffaecb0260116ec5d7cc4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a11f1f712642ffaecb0260116ec5d7cc4">&#9670;&nbsp;</a></span>is_valid_russian_text()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool is_valid_russian_text </td>
+          <td>(</td>
+          <td class="paramtype">const wstring &amp;&#160;</td>
+          <td class="paramname"><em>s</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Проверка валидности русского текста </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">s</td><td>Проверяемая строка </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>true если текст содержит только русские буквы и пробелы </dd></dl>
+
+</div>
+</div>
+<a id="ae66f6b31b5ad750f1fe042a706a4e3d4" name="ae66f6b31b5ad750f1fe042a706a4e3d4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae66f6b31b5ad750f1fe042a706a4e3d4">&#9670;&nbsp;</a></span>main()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int main </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Главная функция программы </p>
+<dl class="section return"><dt>Возвращает</dt><dd>Код завершения программы </dd></dl>
+
+</div>
+</div>
+<a id="af8df558d408a7b2ff2c71daa7bc72e9c" name="af8df558d408a7b2ff2c71daa7bc72e9c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af8df558d408a7b2ff2c71daa7bc72e9c">&#9670;&nbsp;</a></span>remove_spaces()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">wstring remove_spaces </td>
+          <td>(</td>
+          <td class="paramtype">const wstring &amp;&#160;</td>
+          <td class="paramname"><em>s</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Удаление пробелов из строки </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">s</td><td>Исходная строка </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Строка без пробелов </dd></dl>
+
+</div>
+</div>
+<a id="a60cd55d08e129eaacf9d8194b6633477" name="a60cd55d08e129eaacf9d8194b6633477"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a60cd55d08e129eaacf9d8194b6633477">&#9670;&nbsp;</a></span>to_narrow()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">string to_narrow </td>
+          <td>(</td>
+          <td class="paramtype">const wstring &amp;&#160;</td>
+          <td class="paramname"><em>wide_str</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Преобразование wide string в narrow string. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">wide_str</td><td>Строка в формате wstring </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Строка в кодировке UTF-8 </dd></dl>
+
+</div>
+</div>
+<a id="a2040e8b4fbb96eb69999dc22e4593912" name="a2040e8b4fbb96eb69999dc22e4593912"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2040e8b4fbb96eb69999dc22e4593912">&#9670;&nbsp;</a></span>to_upper_rus()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">wstring to_upper_rus </td>
+          <td>(</td>
+          <td class="paramtype">const wstring &amp;&#160;</td>
+          <td class="paramname"><em>s</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Преобразование строки к верхнему регистру (русский) </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">s</td><td>Исходная строка </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Строка в верхнем регистре </dd></dl>
+
+</div>
+</div>
+<a id="a97f14ab5240e2645455893ffd8b4f9f0" name="a97f14ab5240e2645455893ffd8b4f9f0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a97f14ab5240e2645455893ffd8b4f9f0">&#9670;&nbsp;</a></span>to_wide()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">wstring to_wide </td>
+          <td>(</td>
+          <td class="paramtype">const string &amp;&#160;</td>
+          <td class="paramname"><em>narrow_str</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Преобразование narrow string в wide string. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">narrow_str</td><td>Строка в кодировке UTF-8 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Строка в формате wstring </dd></dl>
+
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="main_8cpp.html">main.cpp</a></li>
+    <li class="footer">Создано системой <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
+  </ul>
+</div>
+</body>
+</html>

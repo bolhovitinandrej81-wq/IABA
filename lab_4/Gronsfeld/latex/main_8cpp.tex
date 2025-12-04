@@ -1,0 +1,175 @@
+\hypertarget{main_8cpp}{}\doxysection{Файл main.\+cpp}
+\label{main_8cpp}\index{main.cpp@{main.cpp}}
+
+
+Главный файл программы для шифра Гронсфельда  
+
+
+{\ttfamily \#include \char`\"{}mod\+Alpha\+Cipher.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$iostream$>$}\newline
+{\ttfamily \#include $<$locale$>$}\newline
+{\ttfamily \#include $<$codecvt$>$}\newline
+{\ttfamily \#include $<$algorithm$>$}\newline
+Граф включаемых заголовочных файлов для main.\+cpp\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{main_8cpp__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Функции}
+\begin{DoxyCompactItemize}
+\item 
+wstring \mbox{\hyperlink{main_8cpp_af8df558d408a7b2ff2c71daa7bc72e9c}{remove\+\_\+spaces}} (const wstring \&s)
+\begin{DoxyCompactList}\small\item\em Удаление пробелов из строки \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{main_8cpp_a11f1f712642ffaecb0260116ec5d7cc4}{is\+\_\+valid\+\_\+russian\+\_\+text}} (const wstring \&s)
+\begin{DoxyCompactList}\small\item\em Проверка валидности русского текста \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{main_8cpp_a6db636834487d2ca9964761da2483dbc}{is\+\_\+valid\+\_\+key}} (const wstring \&s)
+\begin{DoxyCompactList}\small\item\em Проверка валидности ключа \end{DoxyCompactList}\item 
+wstring \mbox{\hyperlink{main_8cpp_a2040e8b4fbb96eb69999dc22e4593912}{to\+\_\+upper\+\_\+rus}} (const wstring \&s)
+\begin{DoxyCompactList}\small\item\em Преобразование строки к верхнему регистру (русский) \end{DoxyCompactList}\item 
+wstring \mbox{\hyperlink{main_8cpp_a97f14ab5240e2645455893ffd8b4f9f0}{to\+\_\+wide}} (const string \&narrow\+\_\+str)
+\begin{DoxyCompactList}\small\item\em Преобразование narrow string в wide string. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{main_8cpp_a60cd55d08e129eaacf9d8194b6633477}{to\+\_\+narrow}} (const wstring \&wide\+\_\+str)
+\begin{DoxyCompactList}\small\item\em Преобразование wide string в narrow string. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{main_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}{main}} ()
+\begin{DoxyCompactList}\small\item\em Главная функция программы \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Подробное описание}
+Главный файл программы для шифра Гронсфельда 
+
+\begin{DoxyAuthor}{Автор}
+Ваше Имя 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Версия}
+1.\+0 
+\end{DoxyVersion}
+\begin{DoxyDate}{Дата}
+04.\+12.\+2026
+\end{DoxyDate}
+Программа предоставляет интерфейс для шифрования и расшифрования текста методом Гронсфельда на русском языке. 
+
+\doxysubsection{Функции}
+\mbox{\Hypertarget{main_8cpp_a6db636834487d2ca9964761da2483dbc}\label{main_8cpp_a6db636834487d2ca9964761da2483dbc}} 
+\index{main.cpp@{main.cpp}!is\_valid\_key@{is\_valid\_key}}
+\index{is\_valid\_key@{is\_valid\_key}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{is\_valid\_key()}{is\_valid\_key()}}
+{\footnotesize\ttfamily bool is\+\_\+valid\+\_\+key (\begin{DoxyParamCaption}\item[{const wstring \&}]{s }\end{DoxyParamCaption})}
+
+
+
+Проверка валидности ключа 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em s} & Ключ для проверки \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+true если ключ содержит только русские буквы 
+\end{DoxyReturn}
+\mbox{\Hypertarget{main_8cpp_a11f1f712642ffaecb0260116ec5d7cc4}\label{main_8cpp_a11f1f712642ffaecb0260116ec5d7cc4}} 
+\index{main.cpp@{main.cpp}!is\_valid\_russian\_text@{is\_valid\_russian\_text}}
+\index{is\_valid\_russian\_text@{is\_valid\_russian\_text}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{is\_valid\_russian\_text()}{is\_valid\_russian\_text()}}
+{\footnotesize\ttfamily bool is\+\_\+valid\+\_\+russian\+\_\+text (\begin{DoxyParamCaption}\item[{const wstring \&}]{s }\end{DoxyParamCaption})}
+
+
+
+Проверка валидности русского текста 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em s} & Проверяемая строка \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+true если текст содержит только русские буквы и пробелы 
+\end{DoxyReturn}
+\mbox{\Hypertarget{main_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}\label{main_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}} 
+\index{main.cpp@{main.cpp}!main@{main}}
+\index{main@{main}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily int main (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Главная функция программы 
+
+\begin{DoxyReturn}{Возвращает}
+Код завершения программы 
+\end{DoxyReturn}
+\mbox{\Hypertarget{main_8cpp_af8df558d408a7b2ff2c71daa7bc72e9c}\label{main_8cpp_af8df558d408a7b2ff2c71daa7bc72e9c}} 
+\index{main.cpp@{main.cpp}!remove\_spaces@{remove\_spaces}}
+\index{remove\_spaces@{remove\_spaces}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{remove\_spaces()}{remove\_spaces()}}
+{\footnotesize\ttfamily wstring remove\+\_\+spaces (\begin{DoxyParamCaption}\item[{const wstring \&}]{s }\end{DoxyParamCaption})}
+
+
+
+Удаление пробелов из строки 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em s} & Исходная строка \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+Строка без пробелов 
+\end{DoxyReturn}
+\mbox{\Hypertarget{main_8cpp_a60cd55d08e129eaacf9d8194b6633477}\label{main_8cpp_a60cd55d08e129eaacf9d8194b6633477}} 
+\index{main.cpp@{main.cpp}!to\_narrow@{to\_narrow}}
+\index{to\_narrow@{to\_narrow}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{to\_narrow()}{to\_narrow()}}
+{\footnotesize\ttfamily string to\+\_\+narrow (\begin{DoxyParamCaption}\item[{const wstring \&}]{wide\+\_\+str }\end{DoxyParamCaption})}
+
+
+
+Преобразование wide string в narrow string. 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em wide\+\_\+str} & Строка в формате wstring \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+Строка в кодировке UTF-\/8 
+\end{DoxyReturn}
+\mbox{\Hypertarget{main_8cpp_a2040e8b4fbb96eb69999dc22e4593912}\label{main_8cpp_a2040e8b4fbb96eb69999dc22e4593912}} 
+\index{main.cpp@{main.cpp}!to\_upper\_rus@{to\_upper\_rus}}
+\index{to\_upper\_rus@{to\_upper\_rus}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{to\_upper\_rus()}{to\_upper\_rus()}}
+{\footnotesize\ttfamily wstring to\+\_\+upper\+\_\+rus (\begin{DoxyParamCaption}\item[{const wstring \&}]{s }\end{DoxyParamCaption})}
+
+
+
+Преобразование строки к верхнему регистру (русский) 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em s} & Исходная строка \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+Строка в верхнем регистре 
+\end{DoxyReturn}
+\mbox{\Hypertarget{main_8cpp_a97f14ab5240e2645455893ffd8b4f9f0}\label{main_8cpp_a97f14ab5240e2645455893ffd8b4f9f0}} 
+\index{main.cpp@{main.cpp}!to\_wide@{to\_wide}}
+\index{to\_wide@{to\_wide}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{to\_wide()}{to\_wide()}}
+{\footnotesize\ttfamily wstring to\+\_\+wide (\begin{DoxyParamCaption}\item[{const string \&}]{narrow\+\_\+str }\end{DoxyParamCaption})}
+
+
+
+Преобразование narrow string в wide string. 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em narrow\+\_\+str} & Строка в кодировке UTF-\/8 \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+Строка в формате wstring 
+\end{DoxyReturn}
