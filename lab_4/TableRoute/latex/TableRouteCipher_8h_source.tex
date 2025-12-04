@@ -1,0 +1,35 @@
+\hypertarget{TableRouteCipher_8h_source}{}\doxysection{Table\+Route\+Cipher.\+h}
+\mbox{\hyperlink{TableRouteCipher_8h}{См. документацию.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 }
+\DoxyCodeLine{10 \textcolor{preprocessor}{\#pragma once}}
+\DoxyCodeLine{11 \textcolor{preprocessor}{\#include <string>}}
+\DoxyCodeLine{12 }
+\DoxyCodeLine{13 \textcolor{keyword}{using namespace }std;}
+\DoxyCodeLine{14 }
+\DoxyCodeLine{18 \textcolor{keyword}{class }\mbox{\hyperlink{classcipher__error}{cipher\_error}} : \textcolor{keyword}{public} std::exception \{}
+\DoxyCodeLine{19 \textcolor{keyword}{private}:}
+\DoxyCodeLine{20     \textcolor{keywordtype}{string} \mbox{\hyperlink{classcipher__error_aebcd83e8da717c0b749ce4145289382d}{message}}; }
+\DoxyCodeLine{21 \textcolor{keyword}{public}:}
+\DoxyCodeLine{26     \textcolor{keyword}{explicit} \mbox{\hyperlink{classcipher__error_ac3e2423b9340281cb096706d4235abe4}{cipher\_error}}(\textcolor{keyword}{const} \textcolor{keywordtype}{string}\& msg) : \mbox{\hyperlink{classcipher__error_aebcd83e8da717c0b749ce4145289382d}{message}}(msg) \{\}}
+\DoxyCodeLine{27     }
+\DoxyCodeLine{32     \textcolor{keyword}{const} \textcolor{keywordtype}{char}* \mbox{\hyperlink{classcipher__error_a9fe48d1481fd646df78ff449232d2db2}{what}}() const noexcept\textcolor{keyword}{ override }\{}
+\DoxyCodeLine{33         \textcolor{keywordflow}{return} \mbox{\hyperlink{classcipher__error_aebcd83e8da717c0b749ce4145289382d}{message}}.c\_str();}
+\DoxyCodeLine{34     \}}
+\DoxyCodeLine{35 \};}
+\DoxyCodeLine{36 }
+\DoxyCodeLine{43 \textcolor{keyword}{class }\mbox{\hyperlink{classTableRouteCipher}{TableRouteCipher}} \{}
+\DoxyCodeLine{44 \textcolor{keyword}{private}:}
+\DoxyCodeLine{45     \textcolor{keywordtype}{int} \mbox{\hyperlink{classTableRouteCipher_a9dee4b5c6651057f5864c747ce869297}{key}}; }
+\DoxyCodeLine{46     }
+\DoxyCodeLine{47 \textcolor{keyword}{public}:}
+\DoxyCodeLine{51     \mbox{\hyperlink{classTableRouteCipher_ab145a9731a7f5e29d9449bbdebaa4b79}{TableRouteCipher}}() = \textcolor{keyword}{delete};}
+\DoxyCodeLine{52     }
+\DoxyCodeLine{58     \mbox{\hyperlink{classTableRouteCipher_ab145a9731a7f5e29d9449bbdebaa4b79}{TableRouteCipher}}(\textcolor{keywordtype}{int} skey);}
+\DoxyCodeLine{59     }
+\DoxyCodeLine{66     \textcolor{keywordtype}{string} \mbox{\hyperlink{classTableRouteCipher_a89ad9633dd09e5b0630b8a03ead5268b}{encrypt}}(\textcolor{keywordtype}{string} \&text);}
+\DoxyCodeLine{67     }
+\DoxyCodeLine{74     \textcolor{keywordtype}{string} \mbox{\hyperlink{classTableRouteCipher_ad57e2534cacd1b414d15c91f8319e3fd}{decrypt}}(\textcolor{keywordtype}{string} \&text);}
+\DoxyCodeLine{75 \};}
+
+\end{DoxyCode}

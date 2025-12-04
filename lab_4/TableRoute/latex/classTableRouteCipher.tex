@@ -1,0 +1,140 @@
+\hypertarget{classTableRouteCipher}{}\doxysection{Класс Table\+Route\+Cipher}
+\label{classTableRouteCipher}\index{TableRouteCipher@{TableRouteCipher}}
+
+
+Класс для шифрования табличным маршрутным методом  
+
+
+
+
+{\ttfamily \#include $<$Table\+Route\+Cipher.\+h$>$}
+
+\doxysubsection*{Открытые члены}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classTableRouteCipher_ab145a9731a7f5e29d9449bbdebaa4b79}\label{classTableRouteCipher_ab145a9731a7f5e29d9449bbdebaa4b79}} 
+{\bfseries Table\+Route\+Cipher} ()=delete
+\begin{DoxyCompactList}\small\item\em Запрещённый конструктор без параметров \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classTableRouteCipher_ab6ead8429c6bf31d50a4dca601067b5e}{Table\+Route\+Cipher}} (int skey)
+\begin{DoxyCompactList}\small\item\em Конструктор с установкой ключа \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{classTableRouteCipher_a89ad9633dd09e5b0630b8a03ead5268b}{encrypt}} (string \&text)
+\begin{DoxyCompactList}\small\item\em Метод для шифрования текста \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{classTableRouteCipher_ad57e2534cacd1b414d15c91f8319e3fd}{decrypt}} (string \&text)
+\begin{DoxyCompactList}\small\item\em Метод для расшифрования текста \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Закрытые данные}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classTableRouteCipher_a9dee4b5c6651057f5864c747ce869297}\label{classTableRouteCipher_a9dee4b5c6651057f5864c747ce869297}} 
+int {\bfseries key}
+\begin{DoxyCompactList}\small\item\em Количество столбцов (ключ шифрования) \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Подробное описание}
+Класс для шифрования табличным маршрутным методом 
+
+Шифрование осуществляется путём записи текста в таблицу по строкам и чтения по столбцам. \begin{DoxyWarning}{Предупреждения}
+Реализация только для английского языка 
+\end{DoxyWarning}
+
+
+\doxysubsection{Конструктор(ы)}
+\mbox{\Hypertarget{classTableRouteCipher_ab6ead8429c6bf31d50a4dca601067b5e}\label{classTableRouteCipher_ab6ead8429c6bf31d50a4dca601067b5e}} 
+\index{TableRouteCipher@{TableRouteCipher}!TableRouteCipher@{TableRouteCipher}}
+\index{TableRouteCipher@{TableRouteCipher}!TableRouteCipher@{TableRouteCipher}}
+\doxysubsubsection{\texorpdfstring{TableRouteCipher()}{TableRouteCipher()}}
+{\footnotesize\ttfamily Table\+Route\+Cipher\+::\+Table\+Route\+Cipher (\begin{DoxyParamCaption}\item[{int}]{skey }\end{DoxyParamCaption})}
+
+
+
+Конструктор с установкой ключа 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em skey} & Количество столбцов \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Исключения}
+{\em \mbox{\hyperlink{classcipher__error}{cipher\+\_\+error}}} & Если ключ некорректен\\
+\hline
+\end{DoxyExceptions}
+
+\begin{DoxyParams}{Аргументы}
+{\em skey} & Количество столбцов \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Методы}
+\mbox{\Hypertarget{classTableRouteCipher_ad57e2534cacd1b414d15c91f8319e3fd}\label{classTableRouteCipher_ad57e2534cacd1b414d15c91f8319e3fd}} 
+\index{TableRouteCipher@{TableRouteCipher}!decrypt@{decrypt}}
+\index{decrypt@{decrypt}!TableRouteCipher@{TableRouteCipher}}
+\doxysubsubsection{\texorpdfstring{decrypt()}{decrypt()}}
+{\footnotesize\ttfamily string Table\+Route\+Cipher\+::decrypt (\begin{DoxyParamCaption}\item[{string \&}]{text }\end{DoxyParamCaption})}
+
+
+
+Метод для расшифрования текста 
+
+Расшифрование текста
+
+
+\begin{DoxyParams}{Аргументы}
+{\em text} & Текст для расшифрования \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+Расшифрованная строка 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Исключения}
+{\em \mbox{\hyperlink{classcipher__error}{cipher\+\_\+error}}} & При ошибках валидации\\
+\hline
+\end{DoxyExceptions}
+
+\begin{DoxyParams}{Аргументы}
+{\em text} & Зашифрованный текст \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+Расшифрованная строка 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classTableRouteCipher_a89ad9633dd09e5b0630b8a03ead5268b}\label{classTableRouteCipher_a89ad9633dd09e5b0630b8a03ead5268b}} 
+\index{TableRouteCipher@{TableRouteCipher}!encrypt@{encrypt}}
+\index{encrypt@{encrypt}!TableRouteCipher@{TableRouteCipher}}
+\doxysubsubsection{\texorpdfstring{encrypt()}{encrypt()}}
+{\footnotesize\ttfamily string Table\+Route\+Cipher\+::encrypt (\begin{DoxyParamCaption}\item[{string \&}]{text }\end{DoxyParamCaption})}
+
+
+
+Метод для шифрования текста 
+
+Шифрование текста
+
+
+\begin{DoxyParams}{Аргументы}
+{\em text} & Текст для шифрования \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+Зашифрованная строка 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Исключения}
+{\em \mbox{\hyperlink{classcipher__error}{cipher\+\_\+error}}} & При ошибках валидации\\
+\hline
+\end{DoxyExceptions}
+
+\begin{DoxyParams}{Аргументы}
+{\em text} & Исходный текст \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+Зашифрованная строка 
+\end{DoxyReturn}
+
+
+Объявления и описания членов классов находятся в файлах\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{TableRouteCipher_8h}{Table\+Route\+Cipher.\+h}}\item 
+\mbox{\hyperlink{TableRouteCipher_8cpp}{Table\+Route\+Cipher.\+cpp}}\end{DoxyCompactItemize}
