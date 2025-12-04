@@ -1,1 +1,0 @@
-// modAlphaGipher.h header file
